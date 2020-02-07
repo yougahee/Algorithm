@@ -1,4 +1,4 @@
-package naver;
+package Algorithm.naver;
 
 import java.io.*;
 import java.util.Arrays;

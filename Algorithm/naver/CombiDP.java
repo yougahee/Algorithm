@@ -1,4 +1,4 @@
-package naver;
+package Algorithm.naver;
 
 import java.util.ArrayList;
 import java.util.HashSet;

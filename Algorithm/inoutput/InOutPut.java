@@ -1,4 +1,4 @@
-package inoutput;
+package Algorithm.inoutput;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;

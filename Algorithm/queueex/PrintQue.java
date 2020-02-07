@@ -1,4 +1,4 @@
-package queueex;
+package Algorithm.queueex;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;

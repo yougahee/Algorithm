@@ -1,4 +1,4 @@
-package permu_combi;
+package Algorithm.permu_combi;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -24,7 +24,7 @@ public class PermuCombi {
         int[] output = new int[2];
         boolean[] visited = new boolean[arr.length];
 
-      //perm(arr, output,0, arr.length, 2);
+        Permutation(arr, output,0, arr.length);
 
 //      orderPerm(arr, output, visited, 0, arr.length, 2);
 
@@ -65,22 +65,14 @@ public class PermuCombi {
 
     // 순서 필요없는 순열
     // 이거 뭔가 아닌듯,,,
-    /*public static void perm(int[] arr, int[] output, int step, int n, int r) {
-        if (step == r) {
-            System.out.println(Arrays.toString(arr));
-            return;
-        } else {
-            for (int i = step; i < n; i++) {
-                int temp = arr[i];
-                arr[i] = arr[step];
-                arr[step] = temp;
-
-                perm(arr, output, step + 1, n, r);
-
-                temp = arr[i];
-                arr[i] = arr[step];
-                arr[step] = temp;
+    public static void Permutation(int[] arr, int[] output, int step, int n) {
+        if(n == step) {
+            System.out.println(Arrays.toString(output));
+        }else{
+            for(int i=0; i<n; i++) {
+                output[step] = arr[i];
+                Permutation(arr, output, step+1, n);
             }
         }
-    }*/
+    }
 }
