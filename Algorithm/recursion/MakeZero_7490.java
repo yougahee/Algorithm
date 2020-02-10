@@ -54,16 +54,6 @@ public class MakeZero_7490 {
                     //기호 집어넣어서 판별
                     switch (output[j / 2]) {
                         case 1:
-                            resultStr[j] = "+";
-                            result = result + (++cnt);
-                            before = cnt;
-                            break;
-                        case 2:
-                            resultStr[j] = "-";
-                            result = result - (++cnt);
-                            before = -1 * cnt;
-                            break;
-                        case 3:
                             resultStr[j] = " ";
                             result = result - before;
                             if (before > 0) {
@@ -73,6 +63,18 @@ public class MakeZero_7490 {
                                 result = result - (-1*before * 10 + (++cnt));
                                 before = -1*before * 10 + cnt;
                             }
+                            break;
+
+                        case 2:
+                            resultStr[j] = "+";
+                            result = result + (++cnt);
+                            before = cnt;
+                            break;
+
+                        case 3:
+                            resultStr[j] = "-";
+                            result = result - (++cnt);
+                            before = -1 * cnt;
                             break;
                     }
                 }
