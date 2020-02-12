@@ -24,11 +24,11 @@ public class PermuCombi {
         int[] output = new int[2];
         boolean[] visited = new boolean[arr.length];
 
-        Permutation(arr, output,0, arr.length);
+        //Permutation(arr, output,0, arr.length);
 
-//      orderPerm(arr, output, visited, 0, arr.length, 2);
+      orderPerm(arr, output, visited, 0, arr.length, 2);
 
-        comb(arr, output, 0, arr.length, 2, 0);
+//        comb(arr, output, 0, arr.length, 2, 0);
 
     }
 
