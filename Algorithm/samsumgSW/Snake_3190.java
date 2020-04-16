@@ -18,7 +18,6 @@ public class Snake_3190 {
     }
 
     static int[][] map;
-    static int[][] visited;
     static int cnt=0;
     static int n;
 
@@ -28,9 +27,8 @@ public class Snake_3190 {
 
     static int[] second;
     static String[] c;
-    static int tail=0;
 
-    static Deque<Dot> snake = new ArrayDeque<>();
+    static Deque<Dot> snake = new ArrayDeque<Dot>();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -38,7 +36,6 @@ public class Snake_3190 {
 
         n = Integer.parseInt(br.readLine());
         map = new int[n+1][n+1];
-        visited = new int[n+1][n+1];
 
         int k = Integer.parseInt(br.readLine());
         int x;
@@ -71,10 +68,14 @@ public class Snake_3190 {
 
         int nx=1;
         int ny=1;
+        map[1][1] = 2;
+
+        snake.add(new Dot(nx, ny));
 
         int switchdirection=0;
 
         while(true) {
+
             nx = nx + dx[direction];
             ny = ny + dy[direction];
             cnt++;
@@ -84,10 +85,23 @@ public class Snake_3190 {
                 break;
             }
 
-            if(map[nx][ny]==1 && visited[nx][ny]==0){
-                //길이 증가
-                tail++;
-                visited[nx][ny]=1;
+            //자신에 몸에 부딪히면 끝
+            if(map[nx][ny] == 2) {
+                break;
+            }
+
+            //사과먹음
+            if(map[nx][ny]==1){
+
+                map[nx][ny] =2;
+                snake.addFirst(new Dot(nx, ny));
+            }else if(map[nx][ny] ==0){
+                map[nx][ny] =2;
+                snake.addFirst(new Dot(nx, ny));
+
+                //뒤에 빼기
+                Dot tail = snake.removeLast();
+                map[tail.x][tail.y] = 0;
             }
 
             //방향 바꾸기
@@ -100,9 +114,9 @@ public class Snake_3190 {
 
                 switchdirection++;
             }
-
         }
 
         System.out.println(cnt);
     }
+
 }

@@ -1,4 +1,4 @@
-package Algorithm.NaverHackDaySummer;
+package Algorithm.testnaverhack;
 
 public class Num3 {
 
