@@ -2,10 +2,11 @@ package Algorithm.permu_combi;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class PermuCombi {
+public class Permutation {
     public static void main(String[] args) throws Exception {
 
         int[] arr;
@@ -20,11 +21,16 @@ public class PermuCombi {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
+        int r =2;
 
-        int[] output = new int[2];
+        int[] output = new int[r];
         boolean[] visited = new boolean[arr.length];
 
-        Permutation(arr, output,0, arr.length);
+        //순열
+        //Permutation(arr, output,visited, 0, arr.length, r);
+
+        //중복순열
+        repermutation(arr, output, 0, arr.length, r);
 
  //     orderPerm(arr, output, visited, 0, arr.length, 2);
 
@@ -45,34 +51,38 @@ public class PermuCombi {
         }
     }
 
-    // 순서 있는 순열
-    public static void orderPerm(int[] arr, int[] output, boolean[] visited, int step, int n, int r) {
-        if (step == r) {
+    //순열(nPr)
+    public static void Permutation(int[] arr, int[] output, boolean[] visited, int depth, int n, int r) {
+
+        if(r == depth){
             System.out.println(Arrays.toString(output));
             return;
-        } else {
-            for (int i = 0; i < n; i++) {
-                if (!visited[i]) {
-                    visited[i] = true;
-                    output[step] = arr[i];
-                    orderPerm(arr, output, visited, step + 1, n, r);
+        }
 
-                    visited[i] = false;
-                }
+        for(int i=0; i<n; i++) {
+            if(!visited[i]) {
+                visited[i] = true;
+                output[depth] = arr[i];
+                Permutation(arr, output, visited, depth+1, n, r);
+                visited[i] = false;
+                output[depth] =0;
             }
         }
     }
 
-    // 순서 필요없는 순열
-    // 이거 뭔가 아닌듯,,,
-    public static void Permutation(int[] arr, int[] output, int step, int n) {
-        if(n == step) {
+
+    //중복순열nㅠr
+    public static void repermutation(int[] arr, int[] output, int depth, int n, int r) {
+
+        if(r == depth) {
             System.out.println(Arrays.toString(output));
-        }else{
-            for(int i=0; i<n; i++) {
-                output[step] = arr[i];
-                Permutation(arr, output, step+1, n);
-            }
+            return;
+        }
+
+        for(int i=0; i<n; i++) {
+            output[depth] = arr[i];
+            repermutation(arr, output, depth+1, n, r);
         }
     }
+
 }

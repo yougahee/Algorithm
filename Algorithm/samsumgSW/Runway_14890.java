@@ -1,102 +1,124 @@
 package Algorithm.samsumgSW;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.Buffer;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+        import java.io.BufferedReader;
+        import java.io.IOException;
+        import java.io.InputStreamReader;
+        import java.util.LinkedList;
+        import java.util.StringTokenizer;
 
 public class Runway_14890 {
 
     static int N;
     static int L;
+
     static int[][] map;
-    static int num = 0;
-    static int[] arr = new int[10];
-    static Queue<Integer> queue;
+    static int[] visited;
+
+    static int[] road;
+
+
+    static int cnt=0;
+
+    static int num =0;
+
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st;
-
-        st = new StringTokenizer(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
         N = Integer.parseInt(st.nextToken());
         L = Integer.parseInt(st.nextToken());
 
         map = new int[N][N];
+        road = new int[N];
 
-        for (int i = 0; i < L; i++) {
+        for(int i=0; i<N; i++) {
             st = new StringTokenizer(br.readLine());
-            queue = new LinkedList<Integer>();
 
-            for (int j = 0; j < L; j++) {
+            for(int j=0; j<N; j++) {
                 map[i][j] = Integer.parseInt(st.nextToken());
-                queue.add(map[i][j]);
+                road[j] = map[i][j];
             }
-            //행은 여기서 검사해버리기
-            if (roadNum())
-                num++;
+            num++;
+            solution();
         }
 
         for (int i = 0; i < N; i++) {
-            queue = new LinkedList<>();
-
             for (int j = 0; j < N; j++) {
-                queue.add(map[j][i]);
+                road[j] = map[j][i];
             }
-            //열검사
-            if(roadNum())
-                num++;
+            num++;
+            solution();
         }
 
-        System.out.println(num);
+        System.out.println(cnt);
+
 
     }
 
+    public static void solution() {
 
-    public static boolean roadNum() {
+        visited = new int[N];
 
-        int a = queue.poll();
-        int a_cnt = 1;
+        for(int i=0; i<N-1; i++) {
 
-        while (!queue.isEmpty()) {
-
-            int peak = queue.peek();
-
-            if (a == peak) {
-                queue.poll();
-                a_cnt++;
-            } else {
-                //1 이상으로 커버리면,
-                if (Math.abs(a - peak) > 1) {
-                    //끝내기.. 필요없음
-                    return false;
+            //비교,, 뒤가 더 클 때
+            if (road[i] - road[i + 1] == -1) {
+                if (i - L + 1 < 0 || visited[i] ==1) {
+                    return;
                 }
-                // 뒤의 값이 작은 것
-                else if (a - peak == 1) {
 
-                    for (int i = 1; i < L; i++) {
-                        if (queue.peek() == peak) {
-                            a = queue.poll();
-                        } else {
-                            return false;
-                        }
-                    }
+                if(L ==1) {
+                    visited[i] =1;
                 }
-                // 앞의 값이 작은 것
-                else if (a - peak == -1) {
-                    //끝내기!! 필요없음.
-                    if (a_cnt < L) {
-                        return false;
+
+                int l =1;
+
+                //앞에 L개를 판별
+                while(l < L) {
+
+                    if(road[i] != road[i-l] || visited[i-l] == 1) {
+                        return;
                     }
+                    visited[i-l] = 1;
+
+                    l++;
+                }
+
+
+            }
+            //앞이 더 클 때,
+            if (road[i] - road[i + 1] == 1) {
+
+                if (i + L >= N || visited[i+1] == 1) {
+                    return;
+                }
+
+                if(L ==1) {
+                    visited[i+1] =1;
+                }
+
+                int l = 1;
+
+                //뒤에 L개를 판별.
+                while(l < L) {
+
+                    if(road[i+1] != road[i+l+1] || visited[i+l+1] == 1) {
+                        return;
+                    }
+                    visited[i+l+1] = 1;
+
+                    l++;
                 }
             }
 
+            //1이상 차이가 날 경우
+            if (Math.abs(road[i] - road[i + 1]) > 1) {
+                return;
+            }
         }
-        return true;
 
+        //System.out.println("무엇을 판별해야하지..?   " + num);
+        cnt++;
     }
 }
