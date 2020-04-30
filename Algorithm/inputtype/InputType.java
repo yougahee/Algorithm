@@ -8,6 +8,7 @@ import java.util.StringTokenizer;
 public class InputType {
 
     static char map[][];
+    static int intmap[][];
 
     public static void main(String[] args) throws IOException {
 
@@ -24,6 +25,14 @@ public class InputType {
             String str = br.readLine();
             for(int j=0; j<n; j++) {
                 map[i][j] = str.charAt(j);
+            }
+        }
+
+        //String 으로 입력받아서 int형으로 넣기
+        for(int i=0; i<n; i++) {
+            String str = br.readLine();
+            for(int j=0; j<n; j++) {
+                intmap[i][j] = str.charAt(j) - '0';
             }
         }
 
