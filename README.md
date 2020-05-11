@@ -1,4 +1,7 @@
-# Algorithm
+# BackJoon Algorithm
 
-ready for coding test
-2019. ~ ing
+Ready for coding test
+
+I try to solve the algorithm one per day
+
+2020.02.07 ~ ing
