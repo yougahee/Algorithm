@@ -21,16 +21,16 @@ public class Permutation {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-        int r =2;
+        int r =3;
 
         int[] output = new int[r];
         boolean[] visited = new boolean[arr.length];
 
         //순열
-        //Permutation(arr, output,visited, 0, arr.length, r);
+        Permutation(arr, output,visited, 0, arr.length, r);
 
         //중복순열
-        repermutation(arr, output, 0, arr.length, r);
+//        repermutation(arr, output, 0, arr.length, r);
 
  //     orderPerm(arr, output, visited, 0, arr.length, 2);
 

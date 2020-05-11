@@ -21,13 +21,13 @@ public class Combination {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-        int r =2;
+        int r =3;
 
         int[] output = new int[r];
 
-        //comb(arr, output,  arr.length, r, 0, 0);
+        comb(arr, output,  arr.length, r, 0, 0);
 
-        recomb(arr, output,  arr.length, r, 0, 0);
+        //recomb(arr, output,  arr.length, r, 0, 0);
 
     }
 
