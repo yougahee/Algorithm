@@ -30,7 +30,7 @@ public class Permutation {
         Permutation(arr, output,visited, 0, arr.length, r);
 
         //중복순열
-//        repermutation(arr, output, 0, arr.length, r);
+//        repermutation(arr, output, 0  , arr.length, r);
 
  //     orderPerm(arr, output, visited, 0, arr.length, 2);
 
