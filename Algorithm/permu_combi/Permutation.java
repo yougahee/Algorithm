@@ -21,7 +21,7 @@ public class Permutation {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-        int r =3;
+        int r =2;
 
         int[] output = new int[r];
         boolean[] visited = new boolean[arr.length];
@@ -34,7 +34,7 @@ public class Permutation {
 
  //     orderPerm(arr, output, visited, 0, arr.length, 2);
 
- //       comb(arr, output, 0, arr.length, 2, 0);
+        comb(arr, output, 0, arr.length, 2, 0);
 
     }
 

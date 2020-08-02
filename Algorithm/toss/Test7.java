@@ -3,7 +3,8 @@ package Algorithm.toss;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Test5 {
+public class Test7 {
+
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input1 = br.readLine();

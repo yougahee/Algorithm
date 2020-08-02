@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.HashSet;
 
+//testcase 1개 통과 못함...
 public class Test2 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,8 +16,6 @@ public class Test2 {
         int range_int =0;
 
         Arrays.sort(clone_array);
-
-
 
         //길이가 6인지, 오름차순
         if(input_split.length != 6 || !Arrays.equals(input_split, clone_array)) {

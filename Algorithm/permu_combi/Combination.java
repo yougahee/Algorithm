@@ -21,7 +21,7 @@ public class Combination {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-        int r =3;
+        int r =2;
 
         int[] output = new int[r];
 
