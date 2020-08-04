@@ -1,4 +1,4 @@
-package Algorithm.study20200802;
+package Algorithm.brute_force;
 
 import java.io.BufferedReader;
 import java.io.IOException;

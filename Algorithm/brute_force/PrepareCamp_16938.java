@@ -1,4 +1,4 @@
-package Algorithm.study20200802;
+package Algorithm.brute_force;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -39,6 +39,8 @@ public class PrepareCamp_16938 {
     public static void Combi(int[] arr, int[] output, int n, int r, int index, int target) {
 
         if (r == 0) {
+            //배열은 참조형 변수이기 때문에 Count에서 결과값을 바꾼다면, 이 함수의 output에도 영향이 있다..!
+            //자바의 참조형 변수 --> array, String, 객체 등 기본형을 제외한 모든 자료형
             Count(output);
             return;
         }
@@ -48,9 +50,7 @@ public class PrepareCamp_16938 {
         output[index] = arr[target];
         Combi(arr, output, n,r-1, index+1, target+1);//뽑는 경우
         Combi(arr, output, n, r, index, target+1);//안뽑는 경우
-
     }
-
 
     //조건 만족
     public static void Count(int[] result) {
