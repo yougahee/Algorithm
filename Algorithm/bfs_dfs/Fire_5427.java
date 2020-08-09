@@ -17,7 +17,6 @@ public class Fire_5427 {
         }
     }
 
-
     static int[] dx = {0, 0, -1, 1};
     static int[] dy = {1, -1, 0, 0};
 
@@ -60,9 +59,7 @@ public class Fire_5427 {
                         fire.add(new location(x,y));
                 }
             }
-
             BFS();
-
         }
     }
 
@@ -128,8 +125,9 @@ public class Fire_5427 {
                     //범위에 있는 경우
                     if(nx >= 0 && nx < h && ny >=0 && ny < w ) {
                         if(map[nx][ny] == '@'){
+                            //불부터 돌리면 이걸 쓰지 않아도 된다.
+                            //불이 있는 곳을 상근이가 안가면 되니까....바보!!
                             location_sang.removeIf(x -> (x.x == nx) && (x.y == ny));
-
                         }
                         if(map[nx][ny] != '#' && map[nx][ny] != '*'){
                             map[nx][ny] = '*';
