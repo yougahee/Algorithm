@@ -40,12 +40,9 @@ public class NewRecruits_1946 {
                     cnt++;
                     value = ranking[k];
                 }
-
-                if (cnt > max)
-                    max = cnt;
             }
 
-            System.out.println(max);
+            System.out.println(cnt);
         }
     }
 }
