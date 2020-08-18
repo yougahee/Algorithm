@@ -1,4 +1,4 @@
-package Algorithm.brute_force;
+package Algorithm.binaryserch;
 
 import java.io.BufferedReader;
 import java.io.IOException;
