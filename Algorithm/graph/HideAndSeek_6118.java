@@ -60,7 +60,7 @@ public class HideAndSeek_6118 {
             list[b].add(a);
         }
 
-        BFS();
+        Dijkstra();
 
         for (int i = 2; i < dist.length; i++) {
             if(max < dist[i]) {
@@ -75,7 +75,7 @@ public class HideAndSeek_6118 {
         System.out.println(max_dist + " " + max + " " + cnt);
     }
 
-    public static void BFS() {
+    public static void Dijkstra() {
         priorityQueue.add(new pair(1, 0));
 
         while (!priorityQueue.isEmpty()) {
