@@ -4,8 +4,6 @@ import java.util.*;
 
 public class Solution2 {
     public static void main(String[] args) {
-
-
         String expression = "100-200*300-500+20";
 
         ProblemSolve2 problemSolve2 = new ProblemSolve2();
@@ -71,7 +69,6 @@ class ProblemSolve2 {
                     }else {
                     }
                 }
-
 
             }
 
