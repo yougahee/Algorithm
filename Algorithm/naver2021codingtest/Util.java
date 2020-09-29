@@ -1,4 +1,4 @@
-package Algorithm.kakaoblind2021;
+package Algorithm.naver2021codingtest;
 
 import java.math.BigInteger;
 import java.util.Arrays;

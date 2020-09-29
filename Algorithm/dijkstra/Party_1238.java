@@ -1,6 +1,5 @@
-package Algorithm.graph;
+package Algorithm.dijkstra;
 
-import javax.swing.plaf.IconUIResource;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
