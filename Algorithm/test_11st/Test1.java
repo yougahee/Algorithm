@@ -1,4 +1,4 @@
-package Algorithm.test;
+package Algorithm.test_11st;
 
 public class Test1 {
     public static void main(String[] args) {
