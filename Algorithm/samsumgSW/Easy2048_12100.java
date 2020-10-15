@@ -3,29 +3,19 @@ package Algorithm.samsumgSW;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Easy2048_12100 {
 
     static int N;
-    static int[][] map;
-    static int[][] copy;
-
-    static int[] arr = {1,2,3,4};
-    static int[] output = new int[5];
-
     static int max=0;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
-
         N = Integer.parseInt(br.readLine());
-        map = new int[N][N];
-        copy = new int[N][N];
+        int[][] map = new int[N][N];
 
         for(int i=0; i<N; i++) {
             st = new StringTokenizer(br.readLine()," ");
@@ -34,84 +24,157 @@ public class Easy2048_12100 {
             }
         }
 
-        rePermutation(4,5,0);
-
+        DFS(map, 0);
+        System.out.println(max);
     }
 
-    //중복순열
-    public static void rePermutation(int n, int r, int depth) {
-
-        if(r == depth) {
-            //copy에 map의 값 복사
-            //copyMap();
-
-            //방향이 만들어내는!!
-            for(int i=0; i<5; i++) {
-                solution(output[i]);
-            }
-
-            //최대값 찾아내기!
-            max = Math.max(max, calMax());
+    public static void DFS(int[][] mapCopy, int depth) {
+        if(depth == 5){
+            max = Math.max(max, maxValue(mapCopy));
             return;
         }
-
-        for(int i=0; i<4; i++) {
-            output[depth] = arr[i];
-            rePermutation(n, r, depth+1);
-
-        }
+        DFS(upMove(mapCopy), depth+1);
+        DFS(downMove(mapCopy), depth+1);
+        DFS(leftMove(mapCopy), depth+1);
+        DFS(rightMove(mapCopy), depth+1);
     }
 
-    //화살표 방향마다 바뀌는 배열들
-    public static void solution(int a) {
+    //상
+    // 내가 값을 바꿔서 집어 넣었는데 바꿔서 집어넣은 값이 앞의 값과 또 같을 경우가 있다.
+    public static int[][] upMove(int[][] map) {
+        Stack<Integer> stack = new Stack<>();;
+        int[][] copyMap = new int[N][N];
+        boolean flag = true;
 
-            switch (a) {
-                //상
-                case 1:
-                    for(int y=0; y<N; y++) {
-                        int newX =0;
-                        for(int x=0; x<N; x++) {
-                            if(map[x][y] !=0) {
-                                copy[newX++][y] = map[x][y];
-                            }
-                        }
+        for(int i=0; i<N; i++) {
+            for(int j=0; j<N; j++) {
+                if(map[j][i] != 0) {
+                    if(stack.isEmpty()) stack.add(map[j][i]);
+                    else if( flag && stack.peek() == map[j][i]) {
+                        stack.add(stack.pop()*2);
+                        flag = false;
+                        continue;
                     }
-                    break;
-
-                //하
-                case 2:
-                    break;
-                //좌
-                case 3:
-                    break;
-
-                //우
-                case 4:
-                    break;
+                    else stack.add(map[j][i]);
+                    flag = true;
+                }
             }
 
-
-    }
-
-    public static void copyMap() {
-        for(int i=0; i<N; i++) {
-            for(int j=0; j<N; j++) {
-                copy[i][j] = map[i][j];
+            int index = stack.size()-1;
+            while (!stack.isEmpty()) {
+                copyMap[index--][i] = stack.pop();
             }
         }
+        //printMap(copyMap);
+        return copyMap;
     }
 
+    //하
+    public static int[][] downMove(int[][] map) {
+        Stack<Integer> stack = new Stack<>();
+        int[][] copyMap = new int[N][N];
+        boolean flag = true;
 
-
-    //최대값 찾기
-    public static int calMax() {
-        int calmax=0;
         for(int i=0; i<N; i++) {
-            for(int j=0; j<N; j++) {
-                calmax = Math.max(calmax, copy[i][j]);
+            for(int j=N-1; j>=0; j--) {
+                if(map[j][i] != 0) {
+                    if(stack.isEmpty()) stack.add(map[j][i]);
+                    else if( flag && stack.peek() == map[j][i]) {
+                        stack.add(stack.pop()*2);
+                        flag = false;
+                        continue;
+                    }
+                    else stack.add(map[j][i]);
+                    flag = true;
+                }
+            }
+            int index = N - stack.size();
+            while (!stack.isEmpty()) {
+                copyMap[index++][i] = stack.pop();
             }
         }
 
-        return calmax;
+        //printMap(copyMap);
+        return copyMap;
+    }
+
+    //좌
+    public static int[][] leftMove(int[][] map) {
+        Stack<Integer> stack = new Stack<>();
+        int[][] copyMap = new int[N][N];
+        boolean flag = true;
+
+        for(int i=0; i<N; i++) {
+            for(int j=0; j<N; j++) {
+                if(map[i][j] != 0) {
+                    if(stack.isEmpty()) stack.add(map[i][j]);
+                    else if( flag && stack.peek() == map[i][j]) {
+                        stack.add(stack.pop()*2);
+                        flag = false;
+                        continue;
+                    }
+                    else stack.add(map[i][j]);
+                    flag = true;
+                }
+            }
+            int index = stack.size()-1;
+            while (!stack.isEmpty()) {
+                copyMap[i][index--] = stack.pop();
+            }
+        }
+
+        //printMap(copyMap);
+        return copyMap;
+    }
+
+    //우
+    public static int[][] rightMove(int[][] map) {
+        Stack<Integer> stack;
+        int[][] copyMap = new int[N][N];
+        boolean flag = true;
+
+        for(int i=0; i<N; i++) {
+            stack = new Stack<>();
+            for(int j=N-1; j>=0; j--) {
+                if(map[i][j] !=0 ) {
+                    if(stack.isEmpty()) stack.add(map[i][j]);
+                    else if( flag && stack.peek() == map[i][j]) {
+                        stack.add(stack.pop()*2);
+                        flag = false;
+                        continue;
+                    }
+                    else stack.add(map[i][j]);
+                    flag = true;
+                }
+            }
+            int index = N - stack.size();
+            while (!stack.isEmpty()) {
+                copyMap[i][index++] = stack.pop();
+            }
+        }
+
+        //printMap(copyMap);
+        return copyMap;
+    }
+
+    public static int maxValue(int[][] map) {
+        int maxValue = 0;
+        for(int i=0; i<N; i++) {
+            for(int j=0; j<N; j++) {
+                if(maxValue < map[i][j])
+                    maxValue = map[i][j];
+            }
+        }
+        return maxValue;
+    }
+
+    public static void printMap(int[][] map) {
+        System.out.println("=======================");
+        for(int i=0; i<N; i++) {
+            for(int j=0; j<N; j++) {
+                System.out.print(map[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
