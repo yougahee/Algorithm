@@ -1,4 +1,4 @@
-# BackJoon Algorithm
+# BackJoon Algorithm Repository
 
 Ready for coding test
 
