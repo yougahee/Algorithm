@@ -1,12 +1,9 @@
 package Algorithm.tree;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
-import java.util.StringTokenizer;
 
 //트리 문제 트라우마를 없애보자..!
 public class IsitATree_6416 {
