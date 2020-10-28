@@ -57,11 +57,9 @@ public class Tree_1068 {
 
         while (!queue.isEmpty()) {
             int index = queue.poll();
-            System.out.println("삭제 노드 : " + index);
 
             for(int i=0; i<N; i++) {
                 if(index == arr[i] && !node[i]) {
-                    System.out.println("뭐지? " + i);
                     node[i] = true;
                     queue.add(i);
                 }
