@@ -8,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class FindRootNode {
+public class FindRootNode_11725 {
 
     static int N;
     static int[] answer;
