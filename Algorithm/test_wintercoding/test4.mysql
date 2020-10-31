@@ -1,0 +1,17 @@
+-- 코드를 입력하세요
+
+SELECT NAME_X, NAME_Y, COUNT(NAME_Y) as 장바구니수
+FROM
+(
+    SELECT DISTINCT cart1.NAME as NAME_X, cart2.NAME as NAME_Y, cart1.CART_ID as a, cart2.CART_ID
+    FROM
+        CART_PRODUCTS as cart1, CART_PRODUCTS as cart2
+    WHERE
+        cart1.CART_ID = cart2.CART_ID
+    AND
+        cart1.NAME != cart2.NAME
+    ORDER BY
+        cart1.NAME, cart2.NAME
+) d
+
+GROUP BY NAME_X, NAME_Y
