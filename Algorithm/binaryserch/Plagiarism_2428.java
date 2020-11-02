@@ -9,18 +9,18 @@ import java.util.StringTokenizer;
 public class Plagiarism_2428 {
 
     static int N;
-    static long[] arr;
+    static int[] arr;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
         N = Integer.parseInt(br.readLine());
-        arr = new long[N];
+        arr = new int[N];
 
         st = new StringTokenizer(br.readLine());
         for(int i=0; i<N; i++) {
-            arr[i] = Long.parseLong(st.nextToken());
+            arr[i] = Integer.parseInt(st.nextToken());
         }
 
         Arrays.sort(arr);
