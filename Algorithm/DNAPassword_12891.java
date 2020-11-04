@@ -14,11 +14,11 @@ public class DNAPassword_12891 {
         int S = Integer.parseInt(st.nextToken());
         int P = Integer.parseInt(st.nextToken());
 
-
-
         st = new StringTokenizer(br.readLine());
         for(int i=0; i<4; i++) {
             DNA[i] = Integer.parseInt(st.nextToken());
         }
+
+
     }
 }
