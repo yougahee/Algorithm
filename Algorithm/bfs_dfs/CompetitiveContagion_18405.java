@@ -11,6 +11,7 @@ public class CompetitiveContagion_18405 {
 
     static int N;
 
+    static int[][] map;
     static int[] dx = {1,-1,0,0};
     static int[] dy = {0,0,1,-1};
 
@@ -21,7 +22,7 @@ public class CompetitiveContagion_18405 {
         N = Integer.parseInt(st.nextToken());
         int K = Integer.parseInt(st.nextToken());
 
-        int[][] map = new int[N][N];
+        map = new int[N][N];
         for(int i=0; i<N; i++) {
             st = new StringTokenizer(br.readLine());
             for(int j=0; j<N; j++) {
@@ -37,7 +38,7 @@ public class CompetitiveContagion_18405 {
         loop:
         for(int i=0; i<S; i++) {
             for(int j=0; j<K; j++) {
-                map = BFS(map, j+1);
+                BFS(j+1);
 
                 if(map[X][Y] != 0) break loop;
             }
@@ -46,15 +47,12 @@ public class CompetitiveContagion_18405 {
         System.out.println(map[X][Y]);
     }
 
-    public static int[][] BFS(int[][] map, int virus) {
-        int[][] copyMap = new int[N][N];
+    public static void BFS(int virus) {
         Queue<Pair> queue = new LinkedList<>();
 
         for(int i=0; i<N; i++) {
             for(int j=0; j<N; j++) {
-                copyMap[i][j] = map[i][j];
-
-                if(copyMap[i][j] == virus) queue.add(new Pair(i, j));
+                if(map[i][j] == virus) queue.add(new Pair(i, j));
             }
         }
 
@@ -68,11 +66,9 @@ public class CompetitiveContagion_18405 {
                 if(nx < 0 || nx >= N || ny < 0 || ny >= N ) continue;
                 if(map[nx][ny] != 0) continue;
 
-                copyMap[nx][ny] = virus;
+                map[nx][ny] = virus;
             }
         }
-
-        return copyMap;
     }
 
     static class Pair {
