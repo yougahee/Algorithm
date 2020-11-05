@@ -7,6 +7,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+
+//시간복잡도 생각하기
 public class StartTaxi_19238 {
 
     static int n;
@@ -45,29 +47,41 @@ public class StartTaxi_19238 {
             int ey = Integer.parseInt(st.nextToken()) - 1;
             int dis = findMinDistance(sx,sy,ex,ey);
 
+            if(dis == -1){
+                System.out.println(-1);
+                return;
+            }
+
             customers.add(new Customer(sx, sy, ex,ey, dis));
         }
 
-        //몇번 손님부터 태워야 할지 고르는 단계
+
         for(int i=0; i<m; i++) {
-            int minDistance = 0;
+            int minDistance = Integer.MAX_VALUE;
             int nextCusIdx = 0;
-            //다음으로 태울 손님 찾기
+
+            //다음으로 태울 손님 찾기 --> 이 부분을 시간복잡도 바꾸기
             for(int j=0; j<m; j++) {
                 if(visitedCustomer[j]) continue;
 
                 Customer c = customers.get(j);
-                int dis = findMinDistance(c.startX, c.startY, c.endX, c.endY);
+                int dis = findMinDistance(taxiX, taxiY, c.startX, c.startY);
+
+                if(dis == -1) {
+                    System.out.println(-1);
+                    return;
+                }
 
                 if(minDistance > dis){
                     minDistance = dis;
                     nextCusIdx = j;
                 }
-
             }
 
             fuel -= minDistance;
             fuel -= customers.get(nextCusIdx).distance;
+            taxiX = customers.get(nextCusIdx).endX;
+            taxiY = customers.get(nextCusIdx).endY;
 
             if( fuel < 0 ) break;
 
@@ -75,7 +89,7 @@ public class StartTaxi_19238 {
             visitedCustomer[nextCusIdx] = true;
         }
 
-        if(fuel < 0) {
+        if( fuel < 0 ) {
             System.out.println(-1);
             return;
         }
@@ -83,9 +97,9 @@ public class StartTaxi_19238 {
         System.out.println(fuel);
     }
 
+    //최대 시간복잡도 ==> O(n^2) --> n = 20, n^2 = 400 = m
     static int findMinDistance (int sx, int sy, int ex, int ey) {
 
-        int dis = Integer.MAX_VALUE;
         boolean[][] visited = new boolean[n][n];
         Queue<Customer> queue = new LinkedList<>();
 
@@ -96,7 +110,7 @@ public class StartTaxi_19238 {
             Customer cust = queue.poll();
 
             if(cust.startX == ex && cust.startY == ey) {
-                dis = Math.min(dis, cust.distance);
+                return cust.distance;
             }
 
             for(int i=0; i<4; i++) {
@@ -105,14 +119,14 @@ public class StartTaxi_19238 {
 
                 if(nx < 0 || nx >= n || ny < 0 || ny >= n ) continue;
                 if(map[nx][ny] == 1) continue;
-                if(visited[sx][sy]) continue;
+                if(visited[nx][ny]) continue;
 
-                visited[sx][sy] = true;
+                visited[nx][ny] = true;
                 queue.add(new Customer(nx, ny, cust.distance + 1));
             }
         }
 
-        return dis;
+        return -1;
     }
 
 
