@@ -76,6 +76,10 @@ public class StartTaxi_19238 {
                     minDistance = dis;
                     nextCusIdx = j;
                 }
+
+                if(minDistance == dis) {
+
+                }
             }
 
             fuel -= minDistance;
@@ -87,6 +91,7 @@ public class StartTaxi_19238 {
 
             fuel += customers.get(nextCusIdx).distance * 2;
             visitedCustomer[nextCusIdx] = true;
+
         }
 
         if( fuel < 0 ) {
