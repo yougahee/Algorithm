@@ -7,9 +7,8 @@ import java.util.*;
 
 public class Ship_1092 {
 
-    static int N,M, cnt = 0;
-    static ArrayList<Integer> box, crane;
-
+    static int N;
+    static LinkedList<Integer> box, crane;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,49 +17,58 @@ public class Ship_1092 {
         N = Integer.parseInt(br.readLine());
         st = new StringTokenizer(br.readLine());
 
-        crane = new ArrayList<>();
-        for(int i=0; i<N; i++)
+        crane = new LinkedList<>();
+        for (int i = 0; i < N; i++)
             crane.add(Integer.parseInt(st.nextToken()));
 
-
-        M = Integer.parseInt(br.readLine());
+        int M = Integer.parseInt(br.readLine());
         st = new StringTokenizer(br.readLine());
 
-        box = new ArrayList<>();
-        for(int i=0; i<M; i++)
+        box = new LinkedList<>();
+        for (int i = 0; i < M; i++)
             box.add(Integer.parseInt(st.nextToken()));
 
         Collections.sort(crane, Collections.reverseOrder());
-        Collections.sort(box, Collections.reverseOrder());
+        Collections.sort(box);
 
-        moveShip();
+        System.out.println(moveShip());
     }
 
-    public static void moveShip() {
+    public static int moveShip() {
+        int cnt = 0;
 
+        if( crane.get(0) < box.get(box.size()-1) )
+            return -1;
+
+        loop:
         while (box.size() > 0) {
-            if(crane.size() == 0) {
-                System.out.println(-1);
-                return;
-            }
-
             cnt++;
 
-            for(int i=0; i<crane.size(); i++) {
-                for(int j=0; j<box.size(); j++) {
-                    if( crane.get(i) >= box.get(j) ) {
-                        box.remove(j);
-                        break;
+            for (int i = 0; i < N; i++) {
+                int craneWeight = crane.get(i);
+
+                if(box.size() == 0) break loop;
+                if(box.get(0) > craneWeight) continue;
+
+                int left = 0, middle = 0, ans = 0;
+                int right = box.size()-1;
+
+                while (left <= right) {
+                    middle = (left + right) / 2;
+
+                    if( box.get(middle) <= craneWeight ) {
+                        ans = middle;
+                        left = middle + 1;
                     }
-                    else if( j == box.size()-1 ) {
-                        crane.remove(i);
-                        break;
+                    else {
+                        right = middle - 1;
                     }
                 }
+
+                box.remove(ans);
             }
         }
 
-        //System.out.println("cnt : " + cnt + " box : " +  box.size() + " crane : " + crane.size());
-        System.out.println(cnt);
+        return cnt;
     }
 }
