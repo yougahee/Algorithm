@@ -1,4 +1,4 @@
-package Algorithm.floydwarshall;
+package Algorithm.not_solved;
 
 import Algorithm.swea.MaximumPrize_1244;
 
