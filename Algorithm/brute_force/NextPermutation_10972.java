@@ -1,4 +1,4 @@
-package Algorithm.not_solved;
+package Algorithm.brute_force;
 
 import java.io.BufferedReader;
 import java.io.IOException;
