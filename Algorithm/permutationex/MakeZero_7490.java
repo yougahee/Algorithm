@@ -1,9 +1,8 @@
-package Algorithm.not_solved;
+package Algorithm.permutationex;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class MakeZero_7490 {
 
@@ -25,19 +24,14 @@ public class MakeZero_7490 {
                 arr[j] = j + 1;
             }
 
-            //중복순열
-            //배열의 크기 -1 의 순열자리에 3개의 기호를 가지고 만들 수 있는 순열
-            //그 후, 그 연산자로 0이 만들어지는 지 확인한 후 맞으면 출력
             Permutation(arr, output, 0, output.length);
+            System.out.println();
         }
 
     }
 
     static void Permutation(int[] arr, int[] output, int step, int n) {
         if (n == step) {
-            //arr 숫자 중간중간에 output을 넣어서 계산해야함.
-            //공백은 어떻게 처리할 것인가?
-            //계산하여 0이 되면 출력까지! 여기서 하면 끝!
             int result = 1;
             int cnt = 1;
             int before = 1;
