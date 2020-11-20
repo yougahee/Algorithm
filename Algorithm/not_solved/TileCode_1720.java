@@ -1,4 +1,4 @@
-package Algorithm.dp;
+package Algorithm.not_solved;
 
 import java.io.BufferedReader;
 import java.io.IOException;
