@@ -18,27 +18,8 @@ public class ListOfUniqueNumbers_13144 {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        int answer = n * (n+1) /2;
 
-        int left = 0, right = 0;
-        isChecked[arr[left]] = true;
-        while (true) {
-            if(left >= n) break;
 
-            if(right < n && !isChecked[arr[right+1]]) {
-                //System.out.println("right : " + right + " ans : " + answer);
-                right++;
-                isChecked[arr[right]] = true;
 
-            }else {
-                if(right < n && isChecked[arr[right+1]])
-                    answer -= (n-right-1);
-
-                isChecked[arr[left]] = false;
-                left++;
-            }
-        }
-
-        System.out.println(answer);
     }
 }
