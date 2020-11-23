@@ -1,4 +1,4 @@
-package Algorithm.BinarySerch;
+package Algorithm.BinarySearch;
 
 import java.math.BigInteger;
 import java.util.Scanner;
