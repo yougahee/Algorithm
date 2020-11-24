@@ -19,11 +19,9 @@
 
 
 ### Combination
-
 [Combination](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Combination)
 
 ### Permutation
-
 [Permutation](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
 
 
@@ -34,7 +32,6 @@
 [DP](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DP)
 
 ### Binary Search
-
 [Binary Search](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BinarySearch)
 
 ### Parametric Search
@@ -50,18 +47,36 @@ Dijkstra Algorithm is All pairs shortest path problem.
 It is an algorithm for finding the shortest paths between nodes in a graph
 
 If you want to use Dijkstra Algorithm, you have to know the start, end node.
-If you are implemented the Dijkstra Algorithm, you need to use 1-dimensional array and initial Big value.
+If you are implemented the Dijkstra Algorithm, you need to use 1-dimensional array and initial Big value.  
 [Dijkstra Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
 
 ### Floyd Warshall
 [Floyd Warshall Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Floyd_Warshall)
 
 ### Bellman-Ford 
-[Dijkstra](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
+[Bellman-Ford Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
+
+
+### Topological Sort
+This Algorithm is sorting directional graph's node.
+
+#### How do you sort it?
+
+#### When do you use it?
+- DAG(directed acyclic graph) -> directed and acyclic (사이클이 없다.)
+- 그래프에서 반드시 자신보다 선행되어야 할 일을 다 끝내야만 작업에 들어갈 수 있는(방문할 수 있는) 조건이 주어질 때
+- 전후관계가 분명하다면 위상정렬을 사용해야한다.
+  
+
+#### 특징
+- 위상정렬의 결과가 여러개 나올 수 있음 ( Queue's size is over 1)
+
+
+[Topological Sort Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Topological_Sort)
 
 
 ## Tree
-[Tree](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
+[Tree](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
 
 
 
