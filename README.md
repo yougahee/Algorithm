@@ -61,6 +61,7 @@ If you are implemented the Dijkstra Algorithm, you need to use 1-dimensional arr
 This Algorithm is sorting directional graph's node.
 
 #### How do you sort it?
+- You may count the node that visited
 
 #### When do you use it?
 - DAG(directed acyclic graph) -> directed and acyclic (사이클이 없다.)
@@ -69,7 +70,7 @@ This Algorithm is sorting directional graph's node.
   
 
 #### 특징
-- 위상정렬의 결과가 여러개 나올 수 있음 ( Queue's size is over 1)
+- There can be multiple results of this algorithm. ( Queue's size is over 1)
 
 
 [Topological Sort Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Topological_Sort)
@@ -79,5 +80,16 @@ This Algorithm is sorting directional graph's node.
 [Tree](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
 
 
+### Minimum Spanning Tree (MST)
+
+#### What is the Spanning Tree?
+- 무향 연결 그래프가 있을 때, 
+
+#### What is the Minimum Spanning Tree?
+- 트리의 간선에 가중치(cost)가 있을 때, 간선의 가중치 합이 최소인 스패닝 트리
+- 
+
+
+[Minimum Spanning Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
 
 
