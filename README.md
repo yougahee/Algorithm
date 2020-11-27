@@ -1,44 +1,58 @@
 # BackJoon Algorithm Repository
 
-:point_right: Purpose : Ready for coding test  :fire:
-:point_right: Goal : I try to solve the algorithm one per day
-
+:point_right: Purpose : Ready for coding test  :fire:   
+:point_right: Goal : I try to solve the algorithm one per day   
 :point_right: date : 2020.02.07 ~ ing
 
-# Algorithm 
 
-### Brute Force
-[Brute Force](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
+## Brute Force
 
-
-### BFS & DFS
-[BFS/DFS](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BFS_DFS)
-
-### BackTracking
-[BackTracking](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BackTracking)
+#### What is Brute Force?
+- Brute + Force 로 모든 경우의 수를 고려하고 다 해보는 방법이다.
+- 완전탐색의 일종이다. 
+- [Brute Force Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
 
 
-### Combination
-[Combination](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Combination)
+## BFS & DFS
+### What is BFS?
+
+### What is the DFS?
+
+[BFS/DFS Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BFS_DFS)
+
+## BackTracking
+[BackTracking Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BackTracking)
+
+
+## Combination & Permutation
+[Combination Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Combination)
 
 ### Permutation
-[Permutation](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
+[Permutation Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
 
 
-### Greedy
-[Greedy](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Greedy)
+## Greedy
+[Greedy Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Greedy)
 
-### DP
-[DP](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DP)
+## DP
+[DP Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DP)
 
-### Binary Search
-[Binary Search](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BinarySearch)
+## Binary Search
+[Binary Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BinarySearch)
 
-### Parametric Search
-[Parametric Search](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Parametric_Search)
+## Parametric Search
+[Parametric Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Parametric_Search)
 
 
+### Stack
 
+## Queue
+#### What is Queue?
+- 선입선출 ( Fist-In-First-Out)
+- 단독으로 queue만 구현해서 문제를 푸는 방식은 거의 나오지 않고 BFS, 그리디 등 여러 알고리즘과 섞여서 나온다.
+
+
+### Priority Queue
 
 ## Graph
 
@@ -77,7 +91,7 @@ This Algorithm is sorting directional graph's node.
 
 
 ## Tree
-[Tree](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
+[Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
 
 
 ### Minimum Spanning Tree (MST)
