@@ -5,6 +5,20 @@
 :point_right: date : 2020.02.07 ~ ing
 
 
+## Simulation
+
+#### What is Simulation?
+- 구현 그 자체의 문제이다.
+- 문제에서 요구하는 조건을 충족하고 문제에서 하라는 대로 구현하는 구현 그 자체!
+
+#### Solved Problem
+- [Simulation Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Simulation)
+
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+| 14503 | G5 | 201130 | :o: |
+
+
 ## Brute Force
 
 #### What is Brute Force?

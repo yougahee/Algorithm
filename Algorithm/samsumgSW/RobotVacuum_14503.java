@@ -64,7 +64,6 @@ public class RobotVacuum_14503 {
 
             if(space[r][c] == 0) {
                 space[r][c] =2;
-
             }
 
             //현재방향에서 왼쪽방향 확인
@@ -83,7 +82,6 @@ public class RobotVacuum_14503 {
 
 
     public static void setLocation(int x, int y, int direction, int count) {
-
         r = x;
         c = y;
         d = direction;
