@@ -41,6 +41,7 @@
 - 너비우선탐색
 - Queue를 활용해서 문제해결
 
+#### Solved Problem
 [BFS Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BFS_DFS)
 
 | Number | level |  date | Solved |
