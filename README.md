@@ -17,7 +17,7 @@
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 | 14503 | G5 | 201130 | :o: |  
-  
+| 2659 | S4 | 201201 | :o: |  
 
 <br/>
 
@@ -42,18 +42,19 @@
 - Queue를 활용해서 문제해결
 
 #### Solved Problem
-[BFS Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BFS_DFS)
+[BFS Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BFS)
 
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 | 11559 | G5 | 201201 | :o: |
+| 2660 | G5 | 201201 | :o: |
 
 
 ### What is the DFS?
 - 깊이우선탐색
 
 #### Solved Problem
-[BFS/DFS Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BFS_DFS)
+[DFS Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DFS)
 
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
@@ -62,39 +63,76 @@
 <br/>
 
 ## BackTracking
+
+#### Solved Problem
 [BackTracking Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BackTracking)
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+
+
 
 <br/>
 
 ## Combination & Permutation
+
+#### Solved Problem
 [Combination Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Combination)
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+
+
 
 <br/>
 
 ### Permutation
+
+
+#### Solved Problem
 [Permutation Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
 
 
 <br/>
 
 ## Greedy
+
+
+#### Solved Problem
 [Greedy Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Greedy)
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
 
 <br/>
 
 ## DP
+
+#### Solved Problem
 [DP Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DP)
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+
+
 
 <br/>
 
 ## Binary Search
+
+#### Solved Problem
 [Binary Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BinarySearch)
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+
 
 
 <br/>
 
 ## Parametric Search
+
+#### Solved Problem
 [Parametric Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Parametric_Search)
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
 
 
 
@@ -129,12 +167,19 @@
 
 | 문제번호 | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
-|  |  |  |  |
+| 19366 | S3 | 201127 | :o: |
 
 <br/>
 
 ### Priority Queue
 #### What is Priority Queue?
+
+#### Solve Problem
+- [Priority Queue Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/PriorityQueue)
+
+| 문제번호 | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+|  |  |  |  |
 
 
 <br/>
@@ -148,19 +193,42 @@
 - It is an algorithm for finding the shortest paths between nodes in a graph
 - If you want to use Dijkstra Algorithm, you have to know the start, end node.
 - If you are implemented the Dijkstra Algorithm, you need to use 1-dimensional array and initial Big value.  
-[Dijkstra Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
+
+#### Solve Problem
+- [Dijkstra Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
+
+| 문제번호 | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+|  |  |  |  |
+
+
 
 <br/>
 
 ### Floyd Warshall
-[Floyd Warshall Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Floyd_Warshall)
+
+#### Solve Problem
+- [Floyd Warshall Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Floyd_Warshall)
+
+| 문제번호 | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+| 1613 | G3 | 201124 | :o: |
+
 
 
 
 <br/>
 
 ### Bellman-Ford 
-[Bellman-Ford Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
+
+#### Solve Problem
+- [Bellman-Ford Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
+
+| 문제번호 | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+|  |  |  |  |
+
+
 
 
 <br/>
@@ -194,6 +262,12 @@
 ### Union-Find
 #### What is Union-Find
 
+#### Solve Problem
+- [Union-Find Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Union_Find)
+
+| 문제번호 | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+| 1717 | G4 | 201126 | :o: |
 
 <br/>
 
