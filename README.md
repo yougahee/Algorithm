@@ -4,9 +4,9 @@
 :point_right: Goal : I try to solve the algorithm one per day   
 :point_right: date : 2020.02.07 ~ ing
 
+<br/>
 
 ## Simulation
-
 #### What is Simulation?
 - 구현 그 자체의 문제이다.
 - 문제에서 요구하는 조건을 충족하고 문제에서 하라는 대로 구현하는 구현 그 자체!
@@ -16,11 +16,12 @@
 
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
-| 14503 | G5 | 201130 | :o: |
+| 14503 | G5 | 201130 | :o: |  
+  
 
+<br/>
 
 ## Brute Force
-
 #### What is Brute Force?
 - Brute + Force 로 모든 경우의 수를 고려하고 다 해보는 방법이다.
 - 어떻게 보면 무척 쉬운문제가 될 수도 있지만 구현과 예외가 많이 나타나는 문제라면 어려울 수도 있는 알고리즘
@@ -33,9 +34,19 @@
 | :----: | :------: | :----------------------: | :----: |
 | 1436 | S5 | 201130 | :o: |
 
+<br/>
+
 ## BFS & DFS
 ### What is BFS?
 - 너비우선탐색
+- Queue를 활용해서 문제해결
+
+[BFS Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BFS_DFS)
+
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+| 11559 | G5 | 201201 | :o: |
+
 
 ### What is the DFS?
 - 깊이우선탐색
@@ -47,35 +58,46 @@
 | :----: | :------: | :----------------------: | :----: |
 
 
-
+<br/>
 
 ## BackTracking
 [BackTracking Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BackTracking)
 
+<br/>
 
 ## Combination & Permutation
 [Combination Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Combination)
 
+<br/>
 
 ### Permutation
 [Permutation Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
 
 
+<br/>
+
 ## Greedy
 [Greedy Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Greedy)
 
+<br/>
 
 ## DP
 [DP Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DP)
 
+<br/>
 
 ## Binary Search
 [Binary Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BinarySearch)
 
 
+<br/>
+
 ## Parametric Search
 [Parametric Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Parametric_Search)
 
+
+
+<br/>
 
 ### Stack
 #### What is Stack?
@@ -94,7 +116,7 @@
 
 
 
-
+<br/>
 
 ## Queue
 #### What is Queue?
@@ -108,13 +130,13 @@
 | :----: | :------: | :----------------------: | :----: |
 |  |  |  |  |
 
-
+<br/>
 
 ### Priority Queue
-
 #### What is Priority Queue?
 
 
+<br/>
 
 ## Graph
 
@@ -127,15 +149,22 @@
 - If you are implemented the Dijkstra Algorithm, you need to use 1-dimensional array and initial Big value.  
 [Dijkstra Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
 
+<br/>
+
 ### Floyd Warshall
 [Floyd Warshall Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Floyd_Warshall)
+
+
+
+<br/>
 
 ### Bellman-Ford 
 [Bellman-Ford Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
 
 
-### Topological Sort
+<br/>
 
+### Topological Sort
 #### What is Topological Sort?
 - This Algorithm is sorting directional graph's node.
 
@@ -150,10 +179,8 @@
 #### Characteristic
 - There can be multiple results of this algorithm. ( Queue's size is over 1)
 
-
 #### Solve Problem
 - [Topological Sort Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Topological_Sort)
-
 
 | 문제번호 | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
@@ -161,11 +188,13 @@
 | 1516 | G3 | 201123 | :o: |
 | 2623 | G2 | 201123 | :o: |
 
+<br/>
 
 ### Union-Find
 #### What is Union-Find
 
 
+<br/>
 
 ## Tree
 [Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)

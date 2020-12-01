@@ -1,40 +1,24 @@
 package Algorithm.Not_Solved;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class FindRightIsoscelesTriangle_2658 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        // iter
-        /*
-        for (String arg : args) {
+        int[][] arr = new int[10][10];
+        int[][] ans = new int[3][2];
 
-        }*/
-
-
-        // itar
-
-        /*
-        for (int i = 0; i < args.length; i++) {
-            String arg = args[i];
-
-        }
-        */
-
-
-        //배열이 주어지고, 모든 수가 짝을 이루고 있지만, 딱 한개의 수만 한번 나온다.
-        //어떻게 코드를 짤 것 인가?
-        //XOR을 쓰면 시간복잡도 O(N)
-
-        int[] arr = {1,3,5,5,4,6,4,1,3};
-
-        int result  = 0;
-        for (int i : arr) {
-            result = result ^ i;
+        for(int i=0; i<10; i++) {
+            String str = br.readLine();
+            for(int j=0; j<10; j++) {
+                arr[i][j] = Integer.parseInt(str.substring(j));
+            }
         }
 
-        System.out.println(result);
+        
+
     }
 }
