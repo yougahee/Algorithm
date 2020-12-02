@@ -174,13 +174,20 @@
 
 ## Priority Queue
 #### What is Priority Queue?
+- 우선순위 큐라고 하며 힙이라는 자료구조를 사용한다. 
+- 큐의 형태를 가지고 있지만, 우선순위에 맞춰 자동으로? 순위가 매겨져서 저장되어지는 공간이라고 생각하면 된다.
+- 힙에는 최대힙, 최소힙이 존재하는데, 일반적인 PQ를 구현한다면, 최소힙이 구현되고 reverseOrder을 해주면 최대힙을 구현할 수 있다. 
+
+#### How can it be applied?
+- 우선순위 큐는 혼자 사용하는 경우도 존재하긴 하지만, 그래프 문제를 풀 때 가끔 사용되었던 것으로 기억한다.
+- 최소힙과 최대힙을 같이 사용해서 푸는 문제도 존재한다.
 
 #### Solve Problem
 - [Priority Queue Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/PriorityQueue)
 
 | 문제번호 | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
-|  |  |  |  |
+| 1655 | G2 | 201202 | :o: |
 
 
 <br/>
