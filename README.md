@@ -112,7 +112,7 @@
 [DP Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DP)
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
-
+| 2579 | S3 | 201203 | :x: |
 
 
 <br/>
