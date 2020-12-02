@@ -33,11 +33,12 @@
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 | 1436 | S5 | 201130 | :o: |
+| 1107 | G5 | 201202 | :o: |
 
 <br/>
 
 ## BFS & DFS
-### What is BFS?
+#### What is BFS?
 - 너비우선탐색
 - Queue를 활용해서 문제해결
 
@@ -50,7 +51,7 @@
 | 2660 | G5 | 201201 | :o: |
 
 
-### What is the DFS?
+#### What is the DFS?
 - 깊이우선탐색
 
 #### Solved Problem
@@ -84,7 +85,7 @@
 
 <br/>
 
-### Permutation
+## Permutation
 
 
 #### Solved Problem
@@ -138,7 +139,7 @@
 
 <br/>
 
-### Stack
+## Stack
 #### What is Stack?
 - FILO(First In Last Out)
 
@@ -171,7 +172,7 @@
 
 <br/>
 
-### Priority Queue
+## Priority Queue
 #### What is Priority Queue?
 
 #### Solve Problem
@@ -186,7 +187,7 @@
 
 ## Graph
 
-### Dijkstra
+## Dijkstra
 
 #### What is Dijkstra?
 - Dijkstra Algorithm is All pairs shortest path problem.   
@@ -205,7 +206,7 @@
 
 <br/>
 
-### Floyd Warshall
+## Floyd Warshall
 
 #### Solve Problem
 - [Floyd Warshall Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Floyd_Warshall)
@@ -219,7 +220,7 @@
 
 <br/>
 
-### Bellman-Ford 
+## Bellman-Ford 
 
 #### Solve Problem
 - [Bellman-Ford Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
@@ -233,7 +234,7 @@
 
 <br/>
 
-### Topological Sort
+## Topological Sort
 #### What is Topological Sort?
 - This Algorithm is sorting directional graph's node.
 
@@ -259,7 +260,7 @@
 
 <br/>
 
-### Union-Find
+## Union-Find
 #### What is Union-Find
 
 #### Solve Problem
@@ -275,7 +276,7 @@
 [Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
 
 
-### Minimum Spanning Tree (MST)
+## Minimum Spanning Tree (MST)
 
 #### What is the Spanning Tree?
 
