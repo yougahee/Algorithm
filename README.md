@@ -67,6 +67,7 @@
 
 #### Solved Problem
 [BackTracking Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BackTracking)
+
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 
@@ -78,6 +79,7 @@
 
 #### Solved Problem
 [Combination Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Combination)
+
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 
@@ -90,6 +92,7 @@
 
 #### Solved Problem
 [Permutation Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
+
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 
@@ -101,6 +104,7 @@
 
 #### Solved Problem
 [Greedy Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Greedy)
+
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 
@@ -108,11 +112,27 @@
 
 ## DP
 
+#### What is DP?
+- Dynamic Programming의 약자로 DP라고 부른다.
+- 점화식을 찾는 문제로 문제를 봤을 때 DP라고 감을 잡기도 어려울 뿐더러, 그 규칙을 담아 내고 있는 식을 도출하기까지 시간이 꽤 걸리는 문제다.
+- 문제를 푸는 과정에서 시간이 오래걸리지만, 구현은 상대적으로 쉽다. 
+- memorization기법으로 배열에 저장하면서 값들을 저장하는 방식으로 문제를 풀어나간다.
+- 문제를 풀면 풀수록 내가 과연 이 유형을 알고 있는건가 의문이 든다.
+
+#### Things to watch out for
+1. dp를 풀면서 런타임이 나지 않는지 항상 신경써야 한다. ( 요즘 문제를 풀다가 런타임이 나는 경우가 많았다. )
+    - 런타임이 나지 않게 하려면, dp를 크기를 입력값으로 하지말고 문제에서 제시한 최대 size로 만들어주자!
+    - ex) dp[1] =1, dp[2] = 1 이 있는 경우, n=1로 입력이 들어온다면 dp[1], dp[2] 에 접근하지 못해서 런타임에러가 난다.
+2. dp안에 들어가는 값이 int값인지 long 인지 확인 해야한다.
+    - 최대로 들어갈 수 있는 값으로 테스트 해본 후 원하는 값을 출력하는 지 확인하자.
+
 #### Solved Problem
 [DP Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DP)
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+
+| Number | level |  date | Solved |  
+| :----: | :------: | :----------------------: | :----: |   
 | 2579 | S3 | 201203 | :x: |
+| 9461 | S3 | 201203 | :x: |
 
 
 <br/>
@@ -121,6 +141,7 @@
 
 #### Solved Problem
 [Binary Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BinarySearch)
+
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 
@@ -132,6 +153,7 @@
 
 #### Solved Problem
 [Parametric Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Parametric_Search)
+
 | Number | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 
