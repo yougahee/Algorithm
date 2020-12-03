@@ -72,11 +72,24 @@
 | :----: | :------: | :----------------------: | :----: |
 
 
+<br/>
+
+## Recursion
+#### What is the Recursion?
+- 재귀함수로, 자기자신을 호출하여 값을 도출하는 방법이다.
+- 종료조건을 꼭 설정해야하며 StackOverFlow를 조심해야한다.
+
+#### Solved Problem
+[Recursion Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Recursion)
+
+| Number | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+| 15650 | S3 | 201203 | :o: |
+
 
 <br/>
 
 ## Combination & Permutation
-
 #### Solved Problem
 [Combination Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Combination)
 
@@ -88,8 +101,6 @@
 <br/>
 
 ## Permutation
-
-
 #### Solved Problem
 [Permutation Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
 
@@ -101,7 +112,6 @@
 
 ## Greedy
 
-
 #### Solved Problem
 [Greedy Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Greedy)
 
@@ -111,7 +121,6 @@
 <br/>
 
 ## DP
-
 #### What is DP?
 - Dynamic Programming의 약자로 DP라고 부른다.
 - 점화식을 찾는 문제로 문제를 봤을 때 DP라고 감을 잡기도 어려울 뿐더러, 그 규칙을 담아 내고 있는 식을 도출하기까지 시간이 꽤 걸리는 문제다.
@@ -125,6 +134,7 @@
     - ex) dp[1] =1, dp[2] = 1 이 있는 경우, n=1로 입력이 들어온다면 dp[1], dp[2] 에 접근하지 못해서 런타임에러가 난다.
 2. dp안에 들어가는 값이 int값인지 long 인지 확인 해야한다.
     - 최대로 들어갈 수 있는 값으로 테스트 해본 후 원하는 값을 출력하는 지 확인하자.
+
 
 #### Solved Problem
 [DP Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DP)
@@ -177,8 +187,8 @@
 | 4949 | S4 | 201130 | :o: |
 
 
-
 <br/>
+
 
 ## Queue
 #### What is Queue?
@@ -193,6 +203,7 @@
 | 19366 | S3 | 201127 | :o: |
 
 <br/>
+
 
 ## Priority Queue
 #### What is Priority Queue?
@@ -211,8 +222,8 @@
 | :----: | :------: | :----------------------: | :----: |
 | 1655 | G2 | 201202 | :o: |
 
-
 <br/>
+
 
 ## Graph
 
@@ -232,7 +243,6 @@
 |  |  |  |  |
 
 
-
 <br/>
 
 ## Floyd Warshall
@@ -243,8 +253,6 @@
 | 문제번호 | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
 | 1613 | G3 | 201124 | :o: |
-
-
 
 
 <br/>
@@ -259,9 +267,8 @@
 |  |  |  |  |
 
 
-
-
 <br/>
+
 
 ## Topological Sort
 #### What is Topological Sort?
@@ -307,12 +314,32 @@
 
 ## Minimum Spanning Tree (MST)
 
-#### What is the Spanning Tree?
-
 #### What is the Minimum Spanning Tree?
 - 트리의 간선에 가중치(cost)가 있을 때, 간선의 가중치 합이 최소인 스패닝 트리
 
+#### Solve Problem
+- [Minimum Spanning Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
 
-[Minimum Spanning Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
+| 문제번호 | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+
+
+
+<br/>
+
+## Segment Tree
+
+#### What is the Segment Tree?
+- 구간을 보존하고 있는 트리
+
+
+#### Solve Problem
+- [Segment Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/SegmentTree)
+
+| 문제번호 | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+
+
+
 
 
