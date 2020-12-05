@@ -238,8 +238,8 @@
 - 이것은 DP의 종류라고 한다. ( 그 이유는, 사용한 dist의 거리를 )
 
 #### How 
-- Priority Queue
-- Visited 배열
+- Priority Queue 사용
+- Visited 배열 ( 방문한 노드를 꼭 다시 방문하지 않도록 처리해주어야 한다. )
 
 #### Solve Problem
 - [Dijkstra Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
@@ -315,7 +315,15 @@
 <br/>
 
 ## Tree
-[Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
+
+#### Solve Problem
+- [Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
+
+| 문제번호 | level |  date | Solved |
+| :----: | :------: | :----------------------: | :----: |
+| 4256 | G5 | 201205 | :o: |
+
+
 
 
 ## Minimum Spanning Tree (MST)

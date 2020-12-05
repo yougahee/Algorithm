@@ -33,42 +33,21 @@ public class Tree_4256 {
             }
 
             postOrder(0, N-1, 0);
+            System.out.println();
 
         }
     }
 
     static void postOrder(int s, int e, int index) {
-        if(index == N) {
-            //System.out.println("여기에 언제들어오지?  s: " + s + " e : " + e);
-            return;
-        }
-
-        int root = preOrder[index];
-        int mid = -1;
-
-        //System.out.println(root + " " + s + " " + e);
 
         for(int i = s; i <= e; i++) {
-            if(root == inOrder[i]) {
-                mid = i;
-                break;
+            if(preOrder[index] == inOrder[i]) {
+                postOrder(s, i-1, index+1);
+                postOrder(i+1, e, index+i+1-s);
+                System.out.print(preOrder[index] + " ");
             }
         }
 
-        System.out.println("mid의 값 : " + mid);
 
-        if(mid == -1) return;
-        //left
-        if(s==e) {
-            System.out.print(root + " ");
-            return;
-        }
-        else {
-            postOrder(s, mid-1, index+1);
-            postOrder(mid+1, e, mid+1);
-        }
-
-        //mid
-        System.out.print(root + " ");
     }
 }
