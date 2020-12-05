@@ -46,10 +46,11 @@ public class ShortestPath_1753 {
                 int next = graph[p.i].get(i).i;
                 int weight = graph[p.i].get(i).w;
 
-                dist[next] = Math.min(dist[next], dist[p.i] + weight);
-                pq.add(new Pair(next, dist[next]));
+                if(dist[next] > dist[p.i] + weight) {
+                    dist[next] = dist[p.i] + weight;
+                    pq.add(new Pair(next, dist[next]));
+                }
             }
-
             visited[p.i] = true;
         }
 

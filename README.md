@@ -235,7 +235,7 @@
 - It is an algorithm for finding the shortest paths between nodes in a graph
 - If you want to use Dijkstra Algorithm, you have to know the start, end node.
 - If you are implemented the Dijkstra Algorithm, you need to use 1-dimensional array and initial Big value.  
-
+- 이것은 DP의 종류라고 한다. ( 그 이유는, 사용한 dist의 거리를 )
 
 #### How 
 - Priority Queue
