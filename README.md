@@ -236,12 +236,17 @@
 - If you want to use Dijkstra Algorithm, you have to know the start, end node.
 - If you are implemented the Dijkstra Algorithm, you need to use 1-dimensional array and initial Big value.  
 
+
+#### How 
+- Priority Queue
+- Visited 배열
+
 #### Solve Problem
 - [Dijkstra Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
 
 | 문제번호 | level |  date | Solved |
 | :----: | :------: | :----------------------: | :----: |
-|  |  |  |  |
+| 1753 | G5 | 201205 | :o: |
 
 
 <br/>
