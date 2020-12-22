@@ -118,9 +118,9 @@
 #### Solved Problem
 [Greedy Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Greedy)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
-
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :-------:|
+| 2437 | G3 | 201223 | :x: | 해설봤음 |
 <br/>
 
 ## DP
