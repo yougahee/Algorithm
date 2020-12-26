@@ -14,12 +14,15 @@
 #### Solved Problem
 - [Simulation Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Simulation)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
-| 14503 | G5 | 201130 | :o: |  
-| 2659 | S4 | 201201 | :o: |  
-| 1337 | S4 | 201204 | :o: |  
-| 1173 | B2 | 201209 | :o: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
+| 14503 | G5 | 201130 | :o: |  |
+| 2659 | S4 | 201201 | :o: |  |
+| 1337 | S4 | 201204 | :o: |  |
+| 1173 | B2 | 201209 | :o: |  |
+| 10951 | B3 | 201226 | :o: | EOF를 어떻게 처리하는지 파악하는 문제 |
+
+
 
 <br/>
 
