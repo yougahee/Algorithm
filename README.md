@@ -21,8 +21,8 @@
 | 1337 | S4 | 201204 | :o: |  |
 | 1173 | B2 | 201209 | :o: |  |
 | 10951 | B3 | 201226 | :o: | EOF를 어떻게 처리하는지 파악하는 문제 |
-
-
+| 10818 | B3 | 201226 | :o: | 최대,최소값 구하는 문제 |
+| 8958 | B2 | 201226 | :o: | OX 점수를 구하는 문제 |
 
 <br/>
 
@@ -35,8 +35,8 @@
 #### Solved Problem
 - [Brute Force Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Brute_Force)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 1436 | S5 | 201130 | :o: |
 | 1107 | G5 | 201202 | :o: |
 
@@ -50,8 +50,8 @@
 #### Solved Problem
 [BFS Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BFS)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 11559 | G5 | 201201 | :o: |
 | 2660 | G5 | 201201 | :o: |
 
@@ -62,8 +62,8 @@
 #### Solved Problem
 [DFS Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DFS)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: |  :----------:|
 | 13023 | G5 | 201214 | :o: |
 | 3109 | G2 | 201215 | :x: |
 
@@ -74,8 +74,8 @@
 #### Solved Problem
 [BackTracking Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BackTracking)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 
 
 <br/>
@@ -88,8 +88,8 @@
 #### Solved Problem
 [Recursion Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Recursion)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 15650 | S3 | 201203 | :o: |
 
 
@@ -99,8 +99,8 @@
 #### Solved Problem
 [Combination Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Combination)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 
 
 
@@ -110,8 +110,8 @@
 #### Solved Problem
 [Permutation Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 
 
 <br/>
@@ -150,8 +150,8 @@
 #### Solved Problem
 [DP Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/DP)
 
-| Number | level |  date | Solved |  
-| :----: | :------: | :----------------------: | :----: |   
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------: | 
 | 2579 | S3 | 201203 | :x: |
 | 9461 | S3 | 201203 | :x: |
 | 1890 | S2 | 201208 | :o: |
@@ -165,8 +165,8 @@
 #### Solved Problem
 [Binary Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/BinarySearch)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: |  :----------:|
 
 
 
@@ -177,8 +177,8 @@
 #### Solved Problem
 [Parametric Search Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Parametric_Search)
 
-| Number | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| Number | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: |  :----------:|
 
 
 
@@ -195,8 +195,8 @@
 #### Solve Problem
 - [Stack Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Stack)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 4949 | S4 | 201130 | :o: |
 
 
@@ -211,8 +211,8 @@
 #### Solve Problem
 - [Queue Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Queue)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 19366 | S3 | 201127 | :o: |
 
 <br/>
@@ -231,8 +231,8 @@
 #### Solve Problem
 - [Priority Queue Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/PriorityQueue)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 1655 | G2 | 201202 | :o: |
 
 <br/>
@@ -256,8 +256,8 @@
 #### Solve Problem
 - [Dijkstra Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 1753 | G5 | 201205 | :o: |
 | 1504 | G4 | 201207 | :o: |
 | 1916 | G5 | 201209 | :o: |
@@ -270,8 +270,8 @@
 #### Solve Problem
 - [Floyd Warshall Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Floyd_Warshall)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 1613 | G3 | 201124 | :o: |
 
 
@@ -282,8 +282,8 @@
 #### Solve Problem
 - [Bellman-Ford Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Dijkstra)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 |  |  |  |  |
 
 
@@ -308,8 +308,8 @@
 #### Solve Problem
 - [Topological Sort Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Topological_Sort)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 1005 | G3 | 201124 | :o: |
 | 1516 | G3 | 201123 | :o: |
 | 2623 | G2 | 201123 | :o: |
@@ -322,8 +322,8 @@
 #### Solve Problem
 - [Union-Find Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Union_Find)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 1717 | G4 | 201126 | :o: |
 
 <br/>
@@ -340,8 +340,8 @@
 #### Solve Problem
 - [Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 4256 | G5 | 201205 | :o: |
 | 4803 | G4 | 201206 | :x: |
 
@@ -356,8 +356,8 @@
 #### Solve Problem
 - [Minimum Spanning Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/Tree)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: |  :----------:|
 
 
 
@@ -373,8 +373,8 @@
 #### Solve Problem
 - [Segment Tree Problem Link](https://github.com/yougahee/algorithm-boj/tree/master/Algorithm/SegmentTree)
 
-| 문제번호 | level |  date | Solved |
-| :----: | :------: | :----------------------: | :----: |
+| 문제번호 | level |  date | Solved | etc |
+| :----: | :------: | :----------------------: | :----: | :----------:|
 | 2042 | G1 | 201203 | :o: |
 
 
